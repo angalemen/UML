@@ -6,7 +6,7 @@
 
 ```Java
 
-class Perro extends Animal {
+class Camiseta extends Ropa {
    String raza;
    String morder(cosa : String):String{
       return null;
@@ -16,10 +16,10 @@ class Perro extends Animal {
   void sonar(){}
 }
 
-abstract class Animal {
+abstract class Ropa {
     void alimentar(){} 
     
-    abstract void sonar()
+    abstract void camiseta()
 }
     
 ```
@@ -27,13 +27,13 @@ abstract class Animal {
 ```mermaid
 classDiagram
   
-class Perro {  
+class Camiseta {  
    +morder(cosa: String): String
 }
   
-class Animal{
+class Ropa{
    +void sonar()*
 }
    
-Animal <|-- Perro
+Animal <|-- Camiseta.
  ```
